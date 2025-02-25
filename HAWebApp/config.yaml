@@ -1,0 +1,14 @@
+name: "HAWebApp"
+version: "1.0.0"
+slug: "hawebapp"
+description: "A Python webapp with a database accessible on port 5001"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+ports:
+  5001/tcp: 5001
+ports_description:
+  5001/tcp: "Web interface for the HAWebApp"
+startup: "services"
+boot: "auto"
